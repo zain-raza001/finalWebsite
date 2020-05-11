@@ -1,0 +1,57 @@
+<html>
+  <head>
+    <title>Add Show | AniRatings</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@800&family=Jost:wght@500&family=Lato&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <header>
+      <h2>AniRatings</h2>
+    </header>
+    <nav>
+      <ul>
+        <li><a href="index.html">What is this?</a></li>
+        <li><a href="addShow.html" class="active">Add Show</a></li>
+        <li><a href="viewList.html">View List</a></li>
+        <li><a href="about.html">About Me</a></li>
+      </ul>
+    </nav>
+    <div class="content">
+      <h1>Add Show</h1>
+      <p>Fill out the form below to add a show and then head over to
+        "View List" to your left to see the list of shows you added.
+      </p>
+      <form id="addShowDetails" onsubmit="processDetails()">
+        <label>Name of Show:</label><br>
+        <input type="text" required placeholder="show name"><br>
+        <label>Synopsis:</label><br>
+        <input type="text" required placeholder="overrated"><br>
+        <label>Image URL:</label><br>
+        <input type="text" value="https://freesvg.org/img/Placeholder.png" required placeholder="image url"><br>
+        <label>Rating:</label><br>
+        <input type="text" id="rate" required placeholder="7"><br>
+        <p class="normalp"><u>HUMAN VERIFICATION QUESTION:</u></p>
+        <p class="normalp">Is Fairy Tail a good or bad anime?</p>
+        <input type="radio" id="ftGood" value="good" name="ft">
+        <label>good</label><br>
+        <input type="radio" value="bad" name="ft">
+        <label>bad</label><br><br>
+        <input type="submit" value="Add Show"><br>
+        <input type="reset"><br>
+      </form>
+    </div>
+    <script>
+      function processDetails() {
+        if (document.getElementById('ftGood').checked == true) {
+          return;
+        }
+        showDetails = []
+        for (i = 0; i < 4; i++) {
+          showDetails.push(document.getElementById("addShowDetails").elements[i].value)
+        }
+        window.localStorage.setItem(showDetails[0], showDetails[0] + "~" +
+        showDetails[1] + "~" + showDetails[2] + "~" + showDetails[3]);
+      }
+    </script>
+  </body>
+</html>

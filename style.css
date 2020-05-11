@@ -1,0 +1,132 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Lato', sans-serif;
+}
+
+body {
+  background-color: lightgrey;
+}
+
+header {
+  padding: 10px 20px;
+  background-color: grey;
+  position: sticky;
+  top: 0;
+}
+
+h2 {
+  color: white;
+  font-family: 'Baloo 2', cursive;
+  font-size: 2em;
+}
+
+ul {
+  list-style-type: none;
+  width: 200px;
+  height: 100%;
+  position: fixed;
+  background-color: black;
+}
+
+li a {
+  display: block;
+  padding: 20px;
+  text-decoration: none;
+  text-align: center;
+  color: white;
+  transition: 0.1s;
+}
+
+li a.active, li a:hover{
+  background-color: white;
+  color: black;
+  opacity: 1;
+}
+
+li a.active {
+  opacity: 0.9;
+}
+
+.content {
+  margin: 0 100px 0 250px;
+  padding: 20px;
+}
+
+h1, form {
+  padding: 40px 20px;
+}
+
+h1 {
+  font-family: 'Jost', sans-serif;
+  font-size: 3em;
+}
+
+p {
+  font-size: 1.7em;
+  padding: 20px;
+  line-height: 125%;
+}
+
+.normalp, .detailsp {
+  padding: 10px 0;
+  font-size: 100%;
+}
+
+.detailsp {
+  margin: 5px 0;
+  line-height: 10px;
+}
+
+details, button {
+  margin-left: 20px;
+}
+
+img {
+  height: 200px;
+}
+
+input[type=text] {
+  width: 25%;
+  padding: 10px;
+  margin: 20px 0;
+  opacity: 0.8;
+  transition: 0.4s;
+  border: 2px solid black;
+}
+
+input[type=text]:focus {
+  width: 50%;
+  border-radius: 5px;
+  opacity: 1;
+}
+
+#rate {
+  width: 60px;
+}
+
+button, input[type=submit], input[type=reset] {
+  background-color: white;
+  border: none;
+  margin: 5px 0;
+  padding: 15px;
+  font-size: 15px;
+  border-radius: 5px;
+  opacity: 0.8;
+  transition: 0.4s;
+  cursor: pointer;
+}
+
+button:hover, input[type=submit]:hover, input[type=reset]:hover {
+  background-color: black;
+  color: white;
+  opacity: 1;
+}
+
+button:hover {
+  background-color: red;
+}
+
+button {
+  margin: 20px;
+}
