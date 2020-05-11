@@ -28,5 +28,6 @@ https://www.w3schools.com/cssref/sel_focus.asp
 https://www.w3schools.com/tags/tag_button.asp
 https://www.w3schools.com/css/css3_buttons.asp
 https://www.w3schools.com/cssref/pr_class_cursor.asp
+https://stackoverflow.com/questions/41271092/how-to-loop-through-localstorage-values?rq=1
 
 all other code used was from prior knowledge
